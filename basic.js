@@ -124,3 +124,66 @@ sum2= firstNumber+secondNumber;
 console.log(sum2);
 console.log(Math.min(firstNumber,secondNumber));
 console.log(Math.pow(firstNumber,2))
+
+// string concatenation
+const firstName = 'john';
+const secondName = 'Williams';
+let value;
+
+// concatenation 
+value = firstName+secondName
+// the output is "johnwilliams"
+// to add space between the two names we can use ' '
+// i.e value = firstName +' ' + secondName
+
+// now lets try adding a text to a string that already has a value
+ val = 'john';
+ // to add a string we :
+ val += 'Williams'
+ console.log(val)
+ //output is joahn williams
+
+ // NB in javascript it advisable to use "" instead of '' while making our strings 
+ // forexample when we want to add an apostrophe to ur string while using '' we can run into errors
+
+
+// STRING Methods
+
+// .length = outputs the length of a string 
+const ourWord= "nicework";
+// the lenght counts also the spaces between the string
+console.log(ourWord.length);
+
+// .concat
+// method used to cancatenate
+console.log(ourWord.concat(' ', "our motto"))
+ // .toUpperCase()
+ // used to change the string to upper case
+ console.log(ourWord.toLocaleUpperCase());
+ // .toLowercase()
+ //does the opposite of uppercase
+ console.log(ourWord.toLowerCase());
+   // .indexOf ()
+   // gets the index of a letter
+   console.log(ourWord.indexOf('n'))
+
+   // .charAt()
+   // get character from index 
+   console.log(ourWord.charAt(3))
+
+   // substring()
+   console.log(ourWord.substring(0,3))
+   // replace() replaces a value in a string 
+   console.log(ourWord.replace('nice', 'my'))
+   // includes is a boolean to check if the wors includes something 
+   console.log(ourWord.includes('nice'))
+
+//    You are given a variable of type string 
+// called myString. First, print the length of the string. 
+// Then, try to find a way to print the last character of the string. 
+// At the end, print the first 3 letters of the string.
+
+let stringType ="MyString"
+console.log(stringType.length);
+console.log(stringType.charAt(7))
+console.log(stringType.substring(0,3))
