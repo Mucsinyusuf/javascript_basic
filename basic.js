@@ -187,3 +187,18 @@ let stringType ="MyString"
 console.log(stringType.length);
 console.log(stringType.charAt(7))
 console.log(stringType.substring(0,3))
+
+// template leterals 
+// template strings were interoduced to make working with strings more simple
+
+const hisname = "joahn doe";
+const age = 31;
+const occupation = 'Web developer';
+const city = 'miami';
+ // let say we want to create a sentence wiyh the above data without template leterals it would lok this way
+const sentence = 'Hi, my name is ' + hisname + ' and I am ' + age + ' years old. I work as a ' + occupation + ' in ' + city + '.';
+// Output: "Hi, my name is John Doe and I am 31 years old. I work as a Web Developer in Miami."
+ // we can use template literals instead.
+ // they are created with `` instead of ''
+ const sentance2 = `hi , my name is ${hisname} and i am ${age} , i am a ${occupation} in ${city}`
+ console.log(sentance2)
